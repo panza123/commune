@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(248, 226, 252);
+    width: 100%;
+    height: 100%;
+}
+main{
+    padding: 20px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+#navlist{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ul li{
+    display: inline-block;
+    padding: 10px;
+}
+ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: grey;
+}
+ul li a:hover{
+    background-color: rgb(128, 0, 128);
+  color: white;
+}
+button{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(128, 0, 128);
+    border-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    background-color: plum;
+}
+label{
+    display: none;
+}
+input{
+    display: none;
+}
+#Hamburger{
+    display: none;
+}
+#body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+}
+#bodywriteup{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 55%;
+    height: 100%;
+}
+#box{
+    width: 350px;
+    height: 50px;
+    padding: 10px ;
+    background-color: purple;
+    color:plum;
+    border-radius: 20px;
+}
+#box a{
+    color:plum;
+}
+h1{
+    font-size: 50px;
+}
+#input{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+#input input{
+    display: block;
+    width: 50%;
+    padding: 10px;
+}
+#image{
+    width: 30%;
+    height: 500px;
+}
+#image img{
+    width: 100%;
+    height: 70%;
+}
+#logos{
+    padding-top: 50px;
+}
+@media(max-width:1200px){
+    h1{
+        font-size: 40px;
+    }
+}
+@media(max-width:900px){
+    body{
+        width: 100%;
+        height: auto;
+    }
+    h1{
+        font-size: 30px;
+    }
+    #logos{
+        padding-top: 40px;
+    }
+}
+@media(max-width:700px){
+    body{
+        width: 100%;
+        height: auto;
+    }
+    h1{
+        font-size: 25px;
+    }
+    #logos{
+        padding-top: 35px;
+    }
+
+}
+
+@media(max-width:500px){
+    body{
+        width: 100%;
+        height: auto;
+    }
+  
+    #navlist{
+        display: none;
+    }
+    #body{
+        display: flex;
+        flex-direction: column;
+        
+        width: 100%;
+        height: 100%;
+    }
+    #bodywriteup{
+        gap: 20px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+        font-size: 30px;
+    }
+    #box{
+        width:100%;
+        height: 60px;
+        font-size: 16px;
+        padding: 10px;
+    }
+    #input{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #input input{
+        width: 100%;
+    }
+    #input button{
+        width: 100%;
+    }
+    #image{
+        display: none;
+    }
+    label{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 10px;
+    }
+    input:checked +#Hamburger {
+        display: block;
+        display: flex;
+        flex-direction: column;
+    }
+    #Hamburger ul li{
+        display: flex;
+        flex-direction:column ;
+    }
+}
